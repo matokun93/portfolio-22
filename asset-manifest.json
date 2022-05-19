@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c8fde5ee.css",
-    "main.js": "/static/js/main.dbe7e49e.js",
+    "main.js": "/static/js/main.97154d9e.js",
     "static/js/787.25588e8b.chunk.js": "/static/js/787.25588e8b.chunk.js",
     "static/media/dark_skills.png": "/static/media/dark_skills.f705931e876f0bd974f7.png",
     "static/media/light_skills.png": "/static/media/light_skills.b6c3d310c2f82c9838aa.png",
@@ -20,11 +20,11 @@
     "static/media/logo matokun3.png": "/static/media/logo matokun3.ff58c12f1fb4857589a3.png",
     "index.html": "/index.html",
     "main.c8fde5ee.css.map": "/static/css/main.c8fde5ee.css.map",
-    "main.dbe7e49e.js.map": "/static/js/main.dbe7e49e.js.map",
+    "main.97154d9e.js.map": "/static/js/main.97154d9e.js.map",
     "787.25588e8b.chunk.js.map": "/static/js/787.25588e8b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c8fde5ee.css",
-    "static/js/main.dbe7e49e.js"
+    "static/js/main.97154d9e.js"
   ]
 }
