@@ -1,0 +1,186 @@
+.about-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    height: 80%;
+    padding: 2.5rem;
+}
+
+.interests-container {
+    transition: var(--theme-clr-transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8%;
+    padding: 7%;
+    background-color: var(--light-clr-glass-background);
+    border-radius: 15px;
+    z-index: 1;
+    color: var(--light-clr-primary);
+    height: 90%;
+    width: 50%;
+    font-size: .9rem;
+    box-shadow: 10px 8px 24px -10px var(--light-clr-card-shadow);
+}
+
+.about-text-container {
+    transition: var(--theme-clr-transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8%;
+    padding: 7%;
+    background-color: var(--light-clr-glass-background);
+    border-radius: 15px;
+    z-index: 1;
+    color: var(--light-clr-primary);
+    width: 50%;
+    height: 90%;
+    text-align: justify;
+    font-size: .9rem;
+    box-shadow: 5px 8px 24px -10px var(--light-clr-card-shadow);
+}
+
+.about-text-container p {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-duration: .8s;
+    animation-name: descriptionActive;
+    animation-fill-mode: forwards;
+}
+
+.interests-descriptions {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+}
+
+.interests-icons {
+    display: flex;
+    overflow: visible;
+}
+
+.interests-container h1,
+.about-text-container h1 {
+    overflow: visible;
+}
+
+/* animations */
+
+.about-section {
+    animation-duration: .8s;
+    animation-name: aboutSection;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aboutSection {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* media queries */
+
+@media (max-width: 1500px) {
+    .about-section {
+        gap: 1.2rem
+    }
+}
+
+@media (max-width: 1000px) {
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+        gap: .8rem;
+    }
+
+    .about-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .inverted-about-section {
+        flex-direction: column-reverse;
+    }
+
+    .interests-container,
+    .about-text-container {
+        width: 75%;
+        height: fit-content;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .interests-container h1,
+    .about-text-container h1 {
+        font-size: 1.3rem;
+    }
+
+    .active-card {
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .inactive-card {
+        height: fit-content;
+        padding: 1rem;
+    }
+
+    .inactive-card .interests-icons,
+    .inactive-card .interests-descriptions,
+    .inactive-card p {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .interests-container,
+    .about-text-container {
+        width: 85%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .interests-container,
+    .about-text-container {
+        width: 90%;
+    }
+
+    .interests-container h1,
+    .about-text-container h1 {
+        font-size: 1.2rem;
+    }
+
+    .about-section p {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .interests-container h1,
+    .about-text-container h1 {
+        font-size: 1rem;
+    }
+
+    .about-section p {
+        font-size: .7rem;
+    }
+}

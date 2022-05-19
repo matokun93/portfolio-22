@@ -1,0 +1,85 @@
+.bottom-nav {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .bottom-nav {
+        position: sticky;
+        bottom: 0rem;
+        left: 0rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        overflow: visible;
+    }
+
+    .bottom-nav ul {
+        /* background: linear-gradient(166deg, var(--light-clr-main-glass-left) 0%, var(--light-clr-main-glass-right) 36%); */
+        box-shadow: 5px 8px 24px -5px var(--light-clr-main-glass-shadow);
+        /* box-shadow: 0 8px 32px 0 rgba(98, 100, 126, 0.37); */
+        /* border: 2px solid var(--light-clr-main-glass-border); */
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(18px);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        background-color: var(--light-clr-glass-background);
+        padding: 0 1rem;
+        margin: .5rem;
+    }
+
+    .bottom-nav ul a {
+        transition: var(--theme-clr-transition);
+        z-index: 3;
+        font-size: .8rem;
+        font-weight: 500;
+        color: var(--light-clr-primary);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 1.5rem 30px 1.5rem;
+        white-space: nowrap;
+    }
+
+    .bottom-nav li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .bottom-nav .pointer-container {
+        color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .bottom-nav .pointer {
+        position: absolute;
+        top: 52px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+    .bottom-nav ul a {
+        font-size: .6rem;
+        padding: 20px 1.5rem 20px 1.5rem;
+        min-width: fit-content;
+    }
+
+    .bottom-nav .pointer {
+        position: absolute;
+        top: 37px;
+        font-size: .8rem;
+    }
+}

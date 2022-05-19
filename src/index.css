@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --light-clr-modal-container: #f3f3f3;
+  --light-clr-modal-background: #a7a7a730;
+  --light-app-background-color: #ecaf8f;
+  --light-app-circles-background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.533), rgba(255, 255, 255, 0.036));
+  --light-app-background-image: url('./Assets/gradient.png');
+  --light-clr-primary: #364957;
+  --light-clr-secondary: #de6262;
+  --light-clr-third: #f3f3f3;
+  --light-clr-third-hover: #ffffffa5;
+  /* --light-clr-fourth: #385e90; */
+  --light-clr-fourth: #016ab0;
+  /* --light-clr-fourth-hover: #4776b3; */
+  --light-clr-fourth-hover: #3c80ad;
+  --light-clr-home-icon-background: #f3f3f3;
+  --light-clr-home-icon-color: #de6262;
+  --light-clr-icon-modal-background: #364957;
+  --light-clr-icon-modal-button: #49687e;
+  --light-clr-icon-modal-color: #f3f3f3;
+  --light-clr-glass-background: #ffffff8c;
+  --light-clr-arrow-background: #ffffffe3;
+  --light-clr-tabs-background: #ffffffd1;
+  --light-clr-strong-pink: #cc3782;
+  --light-clr-strong-pink-hover: #db5698;
+  --light-clr-demo-color: #f3f3f3;
+  --light-clr-disabled-tab: #ffffff3a;
+  --light-clr-disabled-tab-color: #686868b6;
+  --light-clr-interest-skill-hover: #ffffffb4;
+  --light-clr-background-gradient-left: #FFB88C;
+  --light-clr-main-glass-left: #ffffffb9;
+  --light-clr-main-glass-right: #ffffff86;
+  --light-clr-main-glass-shadow: #e4927eb4;
+  --light-clr-main-glass-border: #ffffff80;
+  --light-clr-card-shadow: #e47e7e4b;
+  --theme-clr-transition: all .2s;
+}
+
+.dark {
+  --light-clr-modal-container: #373737;
+  --light-clr-modal-background: #1b1b1bc8;
+  --light-app-background-color: #313131;
+  --light-app-circles-background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.211), rgba(255, 255, 255, 0));
+  --light-app-background-image: url('./Assets/gradient_dark.png');
+  --light-clr-primary: #c7c7c7;
+  --light-clr-secondary: #de6262;
+  --light-clr-third: #555555;
+  --light-clr-third-hover: #4b4b4ba5;
+  --light-clr-fourth: #ebebeb;
+  --light-clr-fourth-hover: #d2d2d2;
+  --light-clr-home-icon-background: #f3f3f3;
+  --light-clr-home-icon-color: #de6262;
+  --light-clr-icon-modal-background: #404040;
+  --light-clr-icon-modal-button: #5b5b5b;
+  --light-clr-icon-modal-color: #f3f3f3;
+  --light-clr-glass-background: #2525258c;
+  --light-clr-arrow-background: #636363e3;
+  --light-clr-tabs-background: #3d3d3df3;
+  --light-clr-strong-pink: #cc3782;
+  --light-clr-demo-color: #c7c7c7;
+  --light-clr-disabled-tab: #191919d1;
+  --light-clr-disabled-tab-color: #848484b6;
+  --light-clr-interest-skill-hover: #454545a7;
+  --light-clr-background-gradient-left: #111111;
+  --light-clr-main-glass-left: #4d4d4d8c;
+  --light-clr-main-glass-right: #3c3a3a8c;
+  --light-clr-main-glass-shadow: #272727b4;
+  --light-clr-main-glass-border: #27272780;
+  --light-clr-card-shadow: #22222259;
+  --theme-clr-transition: all .2s;
+}

@@ -1,0 +1,59 @@
+.description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+
+.description-container p {
+    font-size: .9rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: pre-line;
+}
+
+.hidden-description {
+    display: none;
+}
+
+/* animations */
+
+.description-container {
+    animation-duration: .8s;
+    animation-name: descriptionActive;
+    animation-fill-mode: forwards;
+}
+
+@keyframes descriptionActive {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    100% {
+        display: flex;
+        opacity: 1;
+    }
+}
+
+/* media queries */
+
+@media (max-width: 800px) {
+    .description-container p {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .description-container p {
+        font-size: .7rem;
+    }
+}

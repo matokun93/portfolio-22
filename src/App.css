@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#root,
+html,
+body {
+    height: 100%;
+    /* background-color: #fde3d8;
+    background-color: #333232; */
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.App {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', 'sans-serif';
+    /* background-image: url('https://img.freepik.com/free-vector/gradient-grainy-gradient-texture_79603-1642.jpg?w=2000'); */
+    background-size: cover;
+    background-color: var(--light-app-background-color);
+    /* background-image: url('https://images.pexels.com/photos/7130557/pexels-photo-7130557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+    background-image: var(--light-app-background-image);
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    width: 70%;
+    padding: 0% 5%;
+    background: linear-gradient(166deg, var(--light-clr-main-glass-left) 0%, var(--light-clr-main-glass-right) 36%);
+    box-shadow: 0 8px 32px 0 var(--light-clr-main-glass-shadow);
+    /* box-shadow: 0 8px 32px 0 rgba(98, 100, 126, 0.37); */
+    /* border: 2px solid var(--light-clr-main-glass-border); */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(18px);
+    border-radius: 30px;
+}
+
+.circle1,
+.circle2 {
+    background: var(--light-app-circles-background);
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1 {
+    top: 5%;
+    right: 10%;
+}
+
+.circle2 {
+    bottom: 2%;
+    left: 8%;
+}
+
+/* media queries */
+
+@media (max-width: 1700px) {
+    .app-container {
+        height: 85%;
+        width: 75%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .app-container {
+        height: 92%;
+        width: 90%;
+    }
+
+    .circle1,
+    .circle2 {
+        height: 13rem;
+        width: 13rem;
+    }
+
+    .circle1 {
+        top: 2%;
+        right: 2%;
+    }
+
+    .circle2 {
+        bottom: 1%;
+        left: 2%;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .app-container {
+        height: 95%;
+        width: 92%;
+    }
+}
+
+@media (max-width: 500px) {
+    .app-container {
+        height: 97%;
+        width: 95%;
+        padding: 0;
+    }
+}

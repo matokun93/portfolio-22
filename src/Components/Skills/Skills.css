@@ -1,0 +1,62 @@
+.skills-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    padding-bottom: 3rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    overflow: visible;
+
+}
+
+.tabs-section {
+    width: 100%;
+    overflow: visible;
+}
+
+.image-section {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: -1;
+}
+
+.image-section img {
+    max-width: 60%;
+}
+
+/* animations */
+
+.skills-section {
+    animation-duration: .8s;
+    animation-name: skillsSection;
+    animation-fill-mode: forwards;
+}
+
+@keyframes skillsSection {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* media queries */
+
+@media (max-width: 1000px) {
+    .skills-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0;
+    }
+
+    .image-section {
+        display: none;
+    }
+}

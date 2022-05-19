@@ -1,0 +1,240 @@
+.tabs-container {
+    transition: var(--theme-clr-transition);
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    color: var(--light-clr-primary);
+    overflow: visible;
+}
+
+.tab-headers {
+    display: flex;
+    gap: 5px;
+}
+
+.tab-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    display: flex;
+    padding: 1rem 1.5rem;
+    border-radius: 10px 10px 0 0;
+    gap: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: .9rem;
+
+}
+
+.active-header {
+    transition: var(--theme-clr-transition);
+    background-color: var(--light-clr-glass-background);
+    backdrop-filter: blur(18.6px);
+    -webkit-backdrop-filter: blur(18.6px);
+}
+
+.hidden-header {
+    transition: var(--theme-clr-transition);
+    background-color: var(--light-clr-disabled-tab);
+    cursor: pointer;
+    color: var(--light-clr-disabled-tab-color);
+    backdrop-filter: blur(18.6px);
+    -webkit-backdrop-filter: blur(18.6px);
+}
+
+.tab-bodies {
+    transition: var(--theme-clr-transition);
+    background-color: var(--light-clr-glass-background);
+    border-radius: 0 10px 10px 10px;
+    backdrop-filter: blur(18.6px);
+    -webkit-backdrop-filter: blur(18.6px);
+    box-shadow: 15px 30px 24px -18px var(--light-clr-card-shadow);
+
+}
+
+.active-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    font-weight: 500;
+}
+
+.tech-skill {
+    transition: var(--theme-clr-transition);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 50%;
+    padding: 1.5rem 2%;
+    color: var(--light-clr-primary);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.general-skill {
+    transition: var(--theme-clr-transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 1.5rem 2%;
+    color: var(--light-clr-primary);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.tech-skill:hover,
+.general-skill:hover {
+    transition: .2s;
+    background-color: var(--light-clr-interest-skill-hover);
+}
+
+.tech-skill .skillIcon {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.general-skill .general-skill-subcontainer {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    min-width: fit-content;
+}
+
+.general-skill .skillIcon {
+    display: flex;
+    justify-content: center;
+}
+
+.general-skill .skillName {
+    min-width: 10rem;
+}
+
+.skillIcon {
+    font-size: 1.5rem;
+    width: 2rem;
+}
+
+.hidden-content {
+    display: none;
+}
+
+.active-content {
+    animation-duration: .8s;
+    animation-name: activeContent;
+}
+
+@keyframes activeContent {
+    from {
+        display: none;
+        opacity: 0;
+    }
+
+    to {
+        display: flex;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1000px) {
+    .tabs-container {
+        font-size: .9rem;
+    }
+
+    .tab-header {
+        font-size: .8rem;
+    }
+
+    .skillIcon {
+        font-size: 1.2rem;
+    }
+
+    .tech-skill {
+        gap: .9rem;
+        padding: 1rem 2%;
+    }
+
+    .general-skill {
+        gap: 3rem;
+        padding: 1rem 2%;
+    }
+
+    .tabs-container {
+        width: 100%;
+        padding: 0 6rem;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .tabs-container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .tabs-container {
+        font-size: .8rem;
+    }
+
+    .tab-header {
+        font-size: .7rem;
+        gap: .8rem;
+    }
+
+    .skillIcon {
+        font-size: 1rem;
+    }
+
+    .tech-skill {
+        gap: .8rem;
+        padding: .8rem 2%;
+    }
+
+    .general-skill {
+        gap: 1.5rem;
+        padding: .8rem 2%;
+    }
+
+    .general-skill .skillName {
+        min-width: 8rem;
+    }
+
+    .general-skill .general-skill-subcontainer {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+
+
+    .tabs-container {
+        font-size: .7rem;
+    }
+
+    .tab-header {
+        font-size: .6rem;
+    }
+
+    .skillIcon {
+        font-size: .9rem;
+    }
+
+    .tech-skill {
+        gap: .6rem;
+        padding: .6rem 1%;
+    }
+
+    .general-skill {
+        gap: 1rem;
+        padding: .6rem 1%;
+    }
+
+    .general-skill .general-skill-subcontainer {
+        gap: 1rem;
+    }
+}
