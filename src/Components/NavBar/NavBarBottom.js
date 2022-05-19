@@ -9,7 +9,7 @@ const NavBarBottom = memo(() => {
         <nav className='bottom-nav'>
             <ul>
                 <li>
-                    <NavLink to='/portfolio-22/'>
+                    <NavLink to='/'>
                         <FontAwesomeIcon icon={faHome} />
                     </NavLink>
                     <div className="pointer-container">
@@ -17,19 +17,19 @@ const NavBarBottom = memo(() => {
                     </div>
                 </li>
                 <li>
-                    <NavLink to='/portfolio-22/portfolio'>Portafolio</NavLink>
+                    <NavLink to='/portfolio'>Portafolio</NavLink>
                     <div className="pointer-container">
                         <FontAwesomeIcon className='pointer' icon={faCaretUp} />
                     </div>
                 </li>
                 <li>
-                    <NavLink to='/portfolio-22/skills'>Habilidades</NavLink>
+                    <NavLink to='/skills'>Habilidades</NavLink>
                     <div className="pointer-container">
                         <FontAwesomeIcon className='pointer' icon={faCaretUp} />
                     </div>
                 </li>
                 <li>
-                    <NavLink to='/portfolio-22/about'>Sobre mí</NavLink>
+                    <NavLink to='/about'>Sobre mí</NavLink>
                     <div className="pointer-container">
                         <FontAwesomeIcon className='pointer' icon={faCaretUp} />
                     </div>

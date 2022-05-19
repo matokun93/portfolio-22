@@ -22,11 +22,11 @@ const NavBar = memo((darkImages, setDarkImages) => {
     return (
         <nav className='top-nav'>
             <div className="logo">
-                <NavLink to='/portfolio-22/'><img src={Logo} alt="" /></NavLink>
+                <NavLink to='/'><img src={Logo} alt="" /></NavLink>
             </div>
             <ul>
                 <li>
-                    <NavLink to='/portfolio-22/'>
+                    <NavLink to='/'>
                         <FontAwesomeIcon icon={faHome} />
                     </NavLink>
                     <div className="pointer-container">
@@ -34,19 +34,19 @@ const NavBar = memo((darkImages, setDarkImages) => {
                     </div>
                 </li>
                 <li>
-                    <NavLink to='/portfolio-22/portfolio'>Portafolio</NavLink>
+                    <NavLink to='/portfolio'>Portafolio</NavLink>
                     <div className="pointer-container">
                         <FontAwesomeIcon className='pointer' icon={faCaretUp} />
                     </div>
                 </li>
                 <li>
-                    <NavLink to='/portfolio-22/skills'>Habilidades</NavLink>
+                    <NavLink to='/skills'>Habilidades</NavLink>
                     <div className="pointer-container">
                         <FontAwesomeIcon className='pointer' icon={faCaretUp} />
                     </div>
                 </li>
                 <li>
-                    <NavLink to='/portfolio-22/about'>Sobre mí</NavLink>
+                    <NavLink to='/about'>Sobre mí</NavLink>
                     <div className="pointer-container">
                         <FontAwesomeIcon className='pointer' icon={faCaretUp} />
                     </div>

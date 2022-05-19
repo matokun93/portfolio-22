@@ -7,25 +7,25 @@ import { memo } from 'react'
 
 const Sections = memo(({ openModal, setOpenModal, darkImages, setDarkImages }) => {
     return (
-        <Routes basename='/portfolio-22'>
-            <Route path='/portfolio-22/' element={
+        <Routes>
+            <Route path='/' element={
                 <Home
                     darkImages={darkImages}
                 />
             } />
-            <Route path='/portfolio-22/about' element={
+            <Route path='/about' element={
                 <About
                     openModal={openModal}
                     setOpenModal={setOpenModal}
                 />
             } />
-            <Route path='/portfolio-22/portfolio' element={
+            <Route path='/portfolio' element={
                 <Portfolio
                     openModal={openModal}
                     setOpenModal={setOpenModal}
                 />
             } />
-            <Route path='/portfolio-22/skills' element={
+            <Route path='/skills' element={
                 <Skills
                     openModal={openModal}
                     setOpenModal={setOpenModal}
