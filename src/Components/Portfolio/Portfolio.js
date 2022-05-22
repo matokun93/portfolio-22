@@ -18,7 +18,7 @@ const Portfolio = memo(({ openModal, setOpenModal }) => {
             cover: cover1,
             id: 1,
             name: 'Lista de tareas',
-            description: 'Aplicación para administrat tareas, desarrollada utilizando React. Se pueden agregar y borrar tareas de la lista, además de marcarlas como completadas; las tareas se guardan en el almacenamiento local, por lo que persisten una vez cerrado el navegador.',
+            description: 'Aplicación para administrar tareas, desarrollada utilizando React. Se pueden agregar y borrar tareas de la lista, además de marcarlas como completadas; las tareas se guardan en el almacenamiento local, por lo que persisten una vez cerrado el navegador.',
             tools: ['React,', 'JavaScript,', 'Html,', 'CSS'],
             link: 'https://matokun93.github.io/todo-list/'
         },
@@ -26,7 +26,7 @@ const Portfolio = memo(({ openModal, setOpenModal }) => {
             cover: cover2,
             id: 2,
             name: 'Software de gestión multiplataforma (para Aguas del Valle)',
-            description: 'Software multiplataforma (iOS, Android, Desktop) desarrollado utilizando Ionic y consumiendo una API desarrollada en NodeJS  . El software permite gestionar las operaciones de emergencia de la empresa, desde la identificación de un evento en un mapa, hasta el pago de los contratistas involucrados, y todos los procesos intermedios. \n\n Más información en "Demo".',
+            description: 'Software multiplataforma (iOS, Android, Desktop) desarrollado utilizando Ionic y consumiendo una API desarrollada en NodeJS. El software permite gestionar las operaciones de emergencia de la empresa, desde la identificación de un evento en un mapa, hasta el pago de los contratistas involucrados, y todos los procesos intermedios. \n\n Más información en "Demo".',
             tools: ['Ionic,', 'Angular,', 'TypeScript,', 'NodeJS,', 'Html,', 'CSS'],
             link: 'https://matokun93.github.io/ADV-gallery/'
         },
@@ -42,7 +42,7 @@ const Portfolio = memo(({ openModal, setOpenModal }) => {
             cover: cover7,
             id: 4,
             name: 'Buscador de imágenes',
-            description: 'Aplicación de busqueda de imágenes para prácticar React y la librería Formik. La app consume una API de imágenes y las muestra en un layout.',
+            description: 'Aplicación de busqueda de imágenes para prácticar React con la librería Formik. La app consume una API de imágenes y las muestra en un layout.',
             tools: ['React,', 'Formik,', 'JavaScript,', 'Html,', 'CSS'],
             link: 'https://matokun93.github.io/images-search'
         },
@@ -50,7 +50,7 @@ const Portfolio = memo(({ openModal, setOpenModal }) => {
             cover: cover8,
             id: 5,
             name: 'Calculadora de interés compuesto',
-            description: 'Aplicación que realicé para probar un poco más de la libería Formik de React.',
+            description: 'Aplicación que realicé para probar un poco más de la libería Formik.',
             tools: ['React,', 'Formik,', 'JavaScript,', 'Html,', 'CSS'],
             link: 'https://matokun93.github.io/interest-calculator'
         },
@@ -58,7 +58,7 @@ const Portfolio = memo(({ openModal, setOpenModal }) => {
             cover: cover3,
             id: 6,
             name: 'Glass dashboard',
-            description: 'Probando un diseño de dashboard con el efecto de transparencia (que utilicé para crear esta página personal)',
+            description: 'Probando un diseño de dashboard con el efecto de transparencia (que utilicé para crear esta página personal).',
             tools: ['Html,', 'CSS'],
             link: 'https://matokun93.github.io/glass-dashboard/'
         },
@@ -74,7 +74,7 @@ const Portfolio = memo(({ openModal, setOpenModal }) => {
             cover: cover5,
             id: 8,
             name: '3D renders',
-            description: 'Una galería de renders 3D realizados con Blender (Software que utilicé para las ilustraciones de esta página)',
+            description: 'Una galería de renders 3D realizados con Blender (Software que utilicé para las ilustraciones de esta página).',
             tools: ['Blender'],
             link: 'https://matokun93.github.io/blender-gallery/'
         },

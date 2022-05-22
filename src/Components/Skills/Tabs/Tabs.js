@@ -49,7 +49,7 @@ const Tabs = memo(({ setOpenModal }) => {
         {
             icon: faMobileScreenButton,
             name: 'Ionic',
-            description: 'He utilizado el framework IONIC para el desarrollo de aplicaciones moviles/multiplataformas. El framework se basa en componentes escritos en Angular.'
+            description: 'He utilizado el framework IONIC para el desarrollo de aplicaciones moviles/multiplataformas. El framework se basa en componentes escritos con Angular.'
         },
         {
             icon: faCube,

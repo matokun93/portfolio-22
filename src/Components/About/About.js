@@ -77,7 +77,7 @@ const About = memo(() => {
                                 />
                             </div>
                         )
-                    }), [interests])}
+                    }), [interests, active, changeActive])}
                 </div>
                 <div className='interests-descriptions'>
                     {interests.map((interest) => {

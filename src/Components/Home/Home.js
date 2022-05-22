@@ -123,7 +123,7 @@ const Home = memo(({ darkImages }) => {
                 <div className="home-text">
                     <p>
                         <FontAwesomeIcon icon={faUserGraduate} />
-                        Ingeniero Civil en Computacion <br /> e Informatica
+                        Ingeniero Civil en Computación <br /> e Informática
                     </p>
                     <p>
                         <FontAwesomeIcon icon={faMicrochip} />
