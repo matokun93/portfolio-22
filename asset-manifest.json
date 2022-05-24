@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.c8fde5ee.css",
-    "main.js": "/static/js/main.f2b95e73.js",
+    "main.js": "/static/js/main.b4c82a98.js",
     "static/js/787.25588e8b.chunk.js": "/static/js/787.25588e8b.chunk.js",
+    "static/media/CV_MCA.pdf": "/static/media/CV_MCA.0ef97ac2416a98d0af25.pdf",
     "static/media/dark_skills.png": "/static/media/dark_skills.f705931e876f0bd974f7.png",
     "static/media/light_skills.png": "/static/media/light_skills.b6c3d310c2f82c9838aa.png",
     "static/media/home_dark.png": "/static/media/home_dark.ea0db066c2a26f104ec9.png",
@@ -20,11 +21,11 @@
     "static/media/logo matokun3.png": "/static/media/logo matokun3.ff58c12f1fb4857589a3.png",
     "index.html": "/index.html",
     "main.c8fde5ee.css.map": "/static/css/main.c8fde5ee.css.map",
-    "main.f2b95e73.js.map": "/static/js/main.f2b95e73.js.map",
+    "main.b4c82a98.js.map": "/static/js/main.b4c82a98.js.map",
     "787.25588e8b.chunk.js.map": "/static/js/787.25588e8b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c8fde5ee.css",
-    "static/js/main.f2b95e73.js"
+    "static/js/main.b4c82a98.js"
   ]
 }
