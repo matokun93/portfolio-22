@@ -8,6 +8,7 @@ import { useTransition, animated } from 'react-spring'
 
 import homeImageLight from '../../Assets/home_light.png'
 import homeImageDark from '../../Assets/home_dark.png'
+import CV_pdf from '../../Assets/CV_MCA.pdf'
 import './Home.css'
 
 const Home = memo(({ darkImages }) => {
@@ -101,12 +102,11 @@ const Home = memo(({ darkImages }) => {
                             <FontAwesomeIcon icon={faWhatsapp} />
                         </button>
                     </div>
-                    {/* <button>
-                        <FontAwesomeIcon icon={faGithub} />
-                    </button> */}
-                    <button>
-                        <FontAwesomeIcon icon={faLinkedin} />
-                    </button>
+                    <a href="https://linkedin.com/in/mato-castro" target='_blank' rel="noreferrer">
+                        <button>
+                            <FontAwesomeIcon icon={faLinkedin} />
+                        </button>
+                    </a>
                 </div>
                 <h1 className="home-title">Matías Castro <br /> Arriagada</h1>
 
@@ -131,10 +131,12 @@ const Home = memo(({ darkImages }) => {
                     </p>
                 </div>
                 <div className="home-buttons">
-                    <button className='home-primary-button'>
-                        <FontAwesomeIcon icon={faDownload} />
-                        Descargar CV
-                    </button>
+                    <a href={CV_pdf} download='CV_Matias_Castro_Arriagada'>
+                        <button className='home-primary-button'>
+                            <FontAwesomeIcon icon={faDownload} />
+                            Descargar CV
+                        </button>
+                    </a>
                     <button className='home-secondary-button'>
                         <NavLink to='portfolio'>Ver Portafolio</NavLink>
                     </button>
